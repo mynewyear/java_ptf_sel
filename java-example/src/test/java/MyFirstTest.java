@@ -1,4 +1,3 @@
-package traning.selenium;
 
 import org.junit.After;
 import org.junit.Before;
