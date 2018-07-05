@@ -5,8 +5,8 @@ import org.junit.Before;
 import org.openqa.selenium.remote.BrowserType;
 import selenium.appmanager.ApplicationManager;
 
-public class TestBase {
-    protected final ApplicationManager app = new ApplicationManager(BrowserType.CHROME, true);
+public class TestBaseCustomer {
+    protected final ApplicationManager app = new ApplicationManager(BrowserType.CHROME, false);
 
     @Before
     public void setUp() throws Exception {

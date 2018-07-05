@@ -11,6 +11,13 @@ public class NavigationHelper extends  HelperBase{
         super(wd);
     }
 
+    public void customerMainPage() {
+        if(isElementPresent(By.linkText("New customers click here"))){
+            return;
+        }
+        click(By.cssSelector("a i.fa.fa-home"));
+    }
+
     public void homePage() {
         if(isElementPresent(By.xpath("//div[1]/a"))){
             return;

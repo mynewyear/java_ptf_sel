@@ -11,14 +11,24 @@ public class ApplicationManager {
 
     WebDriver wd;
 
+    private CustomerMainPage customerMainPage;
     private NavigationHelper navigationHelper;
     private SessionHelper sessionHelper;
+
     private String browser;
+    private String adminUrl = "http://localhost/litecart/admin/";
+    private String customerUrl = "http://localhost/litecart/en/";
 
-    public ApplicationManager(String browser) {
+    private String url;
+
+    public ApplicationManager(String browser, boolean admin) {
+
         this.browser = browser;
+        if(admin){
+            this.url = adminUrl;
+        }
+        else this.url = customerUrl;
     }
-
 
     public void init() {
 
@@ -31,12 +41,13 @@ public class ApplicationManager {
         }else{
             wd = new FirefoxDriver();
         }
-
         wd.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-        wd.get("http://localhost/litecart/admin/");
+
+        wd.get(url);
+        customerMainPage = new CustomerMainPage(wd);
         navigationHelper = new NavigationHelper(wd);
         sessionHelper = new SessionHelper(wd);
-        sessionHelper.login("admin", "admin");
+//        sessionHelper.login("admin", "admin");
     }
 
     public void stop() {
@@ -46,5 +57,11 @@ public class ApplicationManager {
     public NavigationHelper getNavigationHelper() {
         return navigationHelper;
     }
+    public NavigationHelper goTo() { return navigationHelper; }
+
+    public CustomerMainPage getCustomerMainPage() {
+        return customerMainPage;
+    }
+
 
 }
