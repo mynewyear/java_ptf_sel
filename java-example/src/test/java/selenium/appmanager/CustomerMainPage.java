@@ -23,7 +23,7 @@ public class CustomerMainPage extends HelperBase {
     }
 
     public ArrayList allGoods(){
-        return  (ArrayList<WebElement>) wd.findElements(By.cssSelector("a.link div.image-wrapper"));
+        return  (ArrayList<WebElement>) wd.findElements(By.cssSelector("img.image"));
     }
 
     public void stikerSale() {

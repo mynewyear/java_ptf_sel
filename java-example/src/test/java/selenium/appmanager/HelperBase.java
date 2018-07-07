@@ -51,4 +51,8 @@ public class HelperBase {
             return false;
         }
     }
+
+    public void goBack(){
+        wd.navigate().back();
+    }
 }

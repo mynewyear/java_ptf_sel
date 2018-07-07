@@ -11,6 +11,8 @@ public class ApplicationManager {
 
     WebDriver wd;
 
+    private AdminMainPage adminMainPage;
+    private CountriesPage countriesPage;
     private CustomerMainPage customerMainPage;
     private NavigationHelper navigationHelper;
     private SessionHelper sessionHelper;
@@ -44,10 +46,12 @@ public class ApplicationManager {
         wd.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 
         wd.get(url);
+        adminMainPage = new AdminMainPage(wd);
         customerMainPage = new CustomerMainPage(wd);
         navigationHelper = new NavigationHelper(wd);
         sessionHelper = new SessionHelper(wd);
-//        sessionHelper.login("admin", "admin");
+        countriesPage = new CountriesPage(wd);
+        sessionHelper.login("admin", "admin");
     }
 
     public void stop() {
@@ -62,6 +66,7 @@ public class ApplicationManager {
     public CustomerMainPage getCustomerMainPage() {
         return customerMainPage;
     }
-
+    public CountriesPage getCountriesPage(){ return countriesPage; }
+    public AdminMainPage getAdminMainPage(){ return adminMainPage;}
 
 }
