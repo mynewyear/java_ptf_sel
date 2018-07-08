@@ -24,4 +24,13 @@ public class NavigationHelper extends  HelperBase{
         }
         click(By.xpath("//div[1]/a"));
     }
+
+    public void goToGeozonePage() {
+        if(isElementPresent(By.tagName("h1"))){
+            return;
+        }
+        click(By.linkText("Geo Zones"));
+    }
+
+
 }

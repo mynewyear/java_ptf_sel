@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomerMainPage extends HelperBase {
-
     public CustomerMainPage(WebDriver wd) {
         super(wd);
     }
