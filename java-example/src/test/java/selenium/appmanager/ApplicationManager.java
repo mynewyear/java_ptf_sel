@@ -53,7 +53,7 @@ public class ApplicationManager {
         navigationHelper = new NavigationHelper(wd);
         sessionHelper = new SessionHelper(wd);
         countriesPage = new CountriesPage(wd);
-        sessionHelper.login("admin", "admin");
+  //      sessionHelper.login("admin", "admin");
     }
 
     public void stop() {

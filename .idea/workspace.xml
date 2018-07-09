@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bb4965a-1970-4382-b084-f1d41e2e3cec" name="Default" comment="Task 9. Countries and Geo Zones checking">
-      <change afterPath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/GeoZonePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/GeoZoneChecking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/produtCompare.java" afterDir="false" />
+    <list default="true" id="4bb4965a-1970-4382-b084-f1d41e2e3cec" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/java-example/src/test/java/selenium/Models/DuckData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/ApplicationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CustomerMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CustomerMainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/HelperBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/NavigationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/NavigationHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBaseCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBaseCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/produtCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/produtCompare.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/java-example/.gradle/" />
     <ignored path="$PROJECT_DIR$/java-example/build/" />
@@ -52,13 +53,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CountriesPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CountriesPage.java">
+      <file leaf-file-name="CustomerMainPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CustomerMainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+            <state relative-caret-position="816">
+              <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4277#4278#0" expanded="true" />
+                <element signature="e#4323#4324#0" expanded="true" />
+                <element signature="e#4349#4350#0" expanded="true" />
+                <element signature="e#4438#4439#0" expanded="true" />
+                <element signature="e#4472#4473#0" expanded="true" />
+                <element signature="e#4564#4565#0" expanded="true" />
+                <element signature="e#4596#4597#0" expanded="true" />
+                <element signature="e#4662#4663#0" expanded="true" />
+                <element signature="e#4690#4691#0" expanded="true" />
+                <element signature="e#4751#4752#0" expanded="true" />
+                <element signature="e#4782#4783#0" expanded="true" />
+                <element signature="e#4847#4848#0" expanded="true" />
+                <element signature="e#5017#5018#0" expanded="true" />
+                <element signature="e#5115#5116#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DuckData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/Models/DuckData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelperBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/HelperBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+                <element signature="e#323#324#0" expanded="true" />
+                <element signature="e#363#364#0" expanded="true" />
+                <element signature="e#410#411#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,8 +107,20 @@
       <file leaf-file-name="NavigationHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/NavigationHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+            <state relative-caret-position="476">
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="produtCompare.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/produtCompare.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,11 +137,38 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CountriesPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CountriesPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Boolean.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/Boolean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="120" column="26" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
+              <folding>
+                <element signature="e#3553#3554#0" expanded="true" />
+                <element signature="e#3619#3620#0" expanded="true" />
+                <element signature="e#5060#5061#0" expanded="true" />
+                <element signature="e#5113#5114#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="850">
-              <caret line="55" column="2" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+              <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,68 +179,12 @@
       <file leaf-file-name="TestBaseCustomer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBaseCustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="85">
+              <caret line="8" column="86" selection-start-line="8" selection-start-column="86" selection-end-line="8" selection-end-column="86" />
               <folding>
-                <element signature="e#418#419#0" expanded="true" />
-                <element signature="e#444#445#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#445#446#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminMainPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/AdminMainPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="19" column="63" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#276#277#0" expanded="true" />
-                <element signature="e#301#302#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GeoZonePage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/GeoZonePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerMainPage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CustomerMainPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="produtCompare.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/produtCompare.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SessionHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/SessionHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -560,18 +583,19 @@
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/model/CustomerMainPage.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/CheckStickers.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/SessionHelper.java" />
-        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/HelperBase.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/CountryCheking.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/SidebarElements.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CountriesPage.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/AdminMainPage.java" />
-        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/NavigationHelper.java" />
-        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBaseCustomer.java" />
-        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/produtCompare.java" />
-        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/GeoZoneChecking.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/GeoZonePage.java" />
+        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/NavigationHelper.java" />
+        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/HelperBase.java" />
+        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/Models/DuckData.java" />
+        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBaseCustomer.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CustomerMainPage.java" />
+        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/produtCompare.java" />
       </list>
     </option>
   </component>
@@ -594,6 +618,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -654,15 +681,22 @@
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="selenium" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_ptf_sel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_ptf_sel" type="462c0819:PsiDirectoryNode" />
+              <item name="java-example" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="selenium" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -689,7 +723,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GeoZoneChecking">
+  <component name="RunManager" selected="JUnit.produtCompare">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -855,8 +889,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GeoZoneChecking" />
         <item itemvalue="JUnit.produtCompare" />
+        <item itemvalue="JUnit.GeoZoneChecking" />
         <item itemvalue="JUnit.SidebarElements" />
         <item itemvalue="JUnit.CountryCheking" />
         <item itemvalue="JUnit.CountryCheking.countryChecking" />
@@ -902,65 +936,73 @@
       <option name="project" value="LOCAL" />
       <updated>1530956264459</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Task 9. Countries and Geo Zones checking">
+      <created>1531031547203</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1531031547203</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="produtCompare - 2018.07.07 at 22h 30m 03s.xml">
+    <history-entry file="produtCompare - 2018.07.09 at 01h 04m 55s.xml">
       <configuration name="produtCompare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="produtCompare - 2018.07.07 at 22h 30m 47s.xml">
+    <history-entry file="produtCompare - 2018.07.09 at 01h 10m 00s.xml">
       <configuration name="produtCompare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GeoZoneChecking - 2018.07.07 at 22h 51m 58s.xml">
-      <configuration name="GeoZoneChecking" configurationId="JUnit" />
+    <history-entry file="produtCompare - 2018.07.09 at 01h 11m 01s.xml">
+      <configuration name="produtCompare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GeoZoneChecking - 2018.07.07 at 23h 05m 29s.xml">
-      <configuration name="GeoZoneChecking" configurationId="JUnit" />
+    <history-entry file="produtCompare - 2018.07.09 at 01h 11m 26s.xml">
+      <configuration name="produtCompare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GeoZoneChecking - 2018.07.07 at 23h 08m 26s.xml">
-      <configuration name="GeoZoneChecking" configurationId="JUnit" />
+    <history-entry file="produtCompare - 2018.07.09 at 01h 12m 12s.xml">
+      <configuration name="produtCompare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GeoZoneChecking - 2018.07.07 at 23h 09m 48s.xml">
-      <configuration name="GeoZoneChecking" configurationId="JUnit" />
+    <history-entry file="produtCompare - 2018.07.09 at 01h 14m 18s.xml">
+      <configuration name="produtCompare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GeoZoneChecking - 2018.07.07 at 23h 14m 56s.xml">
-      <configuration name="GeoZoneChecking" configurationId="JUnit" />
+    <history-entry file="produtCompare - 2018.07.09 at 01h 15m 24s.xml">
+      <configuration name="produtCompare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GeoZoneChecking - 2018.07.07 at 23h 17m 33s.xml">
-      <configuration name="GeoZoneChecking" configurationId="JUnit" />
+    <history-entry file="produtCompare - 2018.07.09 at 01h 19m 42s.xml">
+      <configuration name="produtCompare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GeoZoneChecking - 2018.07.07 at 23h 22m 34s.xml">
-      <configuration name="GeoZoneChecking" configurationId="JUnit" />
+    <history-entry file="produtCompare - 2018.07.09 at 01h 20m 52s.xml">
+      <configuration name="produtCompare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GeoZoneChecking - 2018.07.07 at 23h 28m 18s.xml">
-      <configuration name="GeoZoneChecking" configurationId="JUnit" />
+    <history-entry file="produtCompare - 2018.07.09 at 01h 32m 22s.xml">
+      <configuration name="produtCompare" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1536" height="1087" extended-state="6" />
+    <frame x="-8" y="-8" width="1621" height="1165" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32119206" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.31914893" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5020325" side_tool="true" weight="0.4062165" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32879657" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49796748" visible="true" weight="0.40192926" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49796748" visible="true" weight="0.17111771" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25406504" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21140295" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.19269341" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.31139836" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.31139836" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -978,7 +1020,8 @@
     <MESSAGE value="Task 04. All link on Sidebar" />
     <MESSAGE value="Task 8. Checking Stickers" />
     <MESSAGE value="Task 7. Checked sideBar menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 7. Checked sideBar menu" />
+    <MESSAGE value="Task 9. Countries and Geo Zones checking" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 9. Countries and Geo Zones checking" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -990,8 +1033,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/MyFirstTest.java" />
-    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/Login.java" />
     <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/TestBase.java" />
     <entry file="file://$PROJECT_DIR$/java-example/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
@@ -1142,13 +1183,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/HelperBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/CountryCheking.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1166,13 +1200,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/SidebarElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10506">
@@ -1184,21 +1211,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="19" column="63" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CountriesPage.java">
+    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/GeoZonePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="425">
+          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1209,40 +1228,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/NavigationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBaseCustomer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/produtCompare.java">
+    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/SidebarElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/NavigationHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
-          <caret line="55" column="2" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/HelperBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/Boolean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="120" column="26" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
+          <folding>
+            <element signature="e#3553#3554#0" expanded="true" />
+            <element signature="e#3619#3620#0" expanded="true" />
+            <element signature="e#5060#5061#0" expanded="true" />
+            <element signature="e#5113#5114#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1254,20 +1289,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/GeoZonePage.java">
+    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CountriesPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        <state relative-caret-position="544">
+          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBaseCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="86" selection-start-line="8" selection-start-column="86" selection-end-line="8" selection-end-column="86" />
+          <folding>
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CustomerMainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+        <state relative-caret-position="816">
+          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4277#4278#0" expanded="true" />
+            <element signature="e#4323#4324#0" expanded="true" />
+            <element signature="e#4349#4350#0" expanded="true" />
+            <element signature="e#4438#4439#0" expanded="true" />
+            <element signature="e#4472#4473#0" expanded="true" />
+            <element signature="e#4564#4565#0" expanded="true" />
+            <element signature="e#4596#4597#0" expanded="true" />
+            <element signature="e#4662#4663#0" expanded="true" />
+            <element signature="e#4690#4691#0" expanded="true" />
+            <element signature="e#4751#4752#0" expanded="true" />
+            <element signature="e#4782#4783#0" expanded="true" />
+            <element signature="e#4847#4848#0" expanded="true" />
+            <element signature="e#5017#5018#0" expanded="true" />
+            <element signature="e#5115#5116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/Models/DuckData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/produtCompare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

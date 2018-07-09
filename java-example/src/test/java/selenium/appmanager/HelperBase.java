@@ -55,4 +55,24 @@ public class HelperBase {
     public void goBack(){
         wd.navigate().back();
     }
+
+    public int[] colorParser(String str) {
+        int[] result = {0, 0, 0};
+        int i = 0;
+        int j = 0;
+        while (i < 3 && j < str.length()) {
+            if (Character.isDigit(str.charAt(j))) {
+                result[i] *= 10;
+                result[i] += Character.getNumericValue(str.charAt(j));
+                j++;
+            } else if(str.charAt(j) == ','){
+                i++;
+                j++;
+            }
+            else {
+                j++;
+            }
+        }
+        return result;
+    }
 }
