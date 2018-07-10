@@ -1,4 +1,4 @@
-package selenium.Models;
+package selenium.models;
 
 public class DuckData {
 

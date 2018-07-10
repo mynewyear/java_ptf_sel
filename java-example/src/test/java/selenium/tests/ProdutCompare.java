@@ -2,7 +2,7 @@ package selenium.tests;
 
 import org.junit.Assert;
 import org.junit.Test;
-import selenium.Models.DuckData;
+import selenium.models.DuckData;
 
 public class ProdutCompare extends TestBaseCustomer{
 

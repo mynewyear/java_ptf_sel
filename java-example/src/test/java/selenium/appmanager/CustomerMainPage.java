@@ -4,7 +4,8 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import selenium.Models.DuckData;
+import selenium.models.DuckData;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,7 +65,6 @@ public class CustomerMainPage extends HelperBase {
         String colorNewPrice = newPriceWebElement.getCssValue("color");
 //        System.out.println(newPriceWebElement.getText() + " " + colorNewPrice + " " + boldNewPrice + " " +sizeOldPrice);
 
-        colorParser(colorNewPrice);
         String sizeNewPrice = newPriceWebElement.getSize().toString();
 
         DuckData duckDataFromDuckPage = new DuckData(name,
@@ -135,4 +135,6 @@ public class CustomerMainPage extends HelperBase {
             System.out.println(stickers);
         }
     }
+
+
 }

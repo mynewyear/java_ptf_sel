@@ -17,6 +17,7 @@ public class ApplicationManager {
     private NavigationHelper navigationHelper;
     private SessionHelper sessionHelper;
     private GeoZonePage geoZonePage;
+    private AccountCreationHelper accountCreationHelper;
 
     private String browser;
     private String adminUrl = "http://localhost/litecart/admin/";
@@ -44,9 +45,10 @@ public class ApplicationManager {
         }else{
             wd = new FirefoxDriver();
         }
-        wd.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
         wd.get(url);
+        accountCreationHelper = new AccountCreationHelper(wd);
         geoZonePage = new GeoZonePage(wd);
         adminMainPage = new AdminMainPage(wd);
         customerMainPage = new CustomerMainPage(wd);
@@ -71,5 +73,5 @@ public class ApplicationManager {
     public CountriesPage getCountriesPage(){ return countriesPage; }
     public AdminMainPage getAdminMainPage(){ return adminMainPage;}
     public GeoZonePage getGeoZonePage(){ return geoZonePage; }
-
+    public AccountCreationHelper getAccountCreationHelper(){ return accountCreationHelper;}
 }
