@@ -5,11 +5,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import selenium.models.AccountCreationData;
 
 public class AccountCreationHelper extends HelperBase {
-    public AccountCreationHelper(WebDriver wd) {
-        super(wd);
+    public AccountCreationHelper(WebDriver wd, WebDriverWait wait) {
+        super(wd, wait);
     }
 
     public AccountCreationData createAccount(String firstName,

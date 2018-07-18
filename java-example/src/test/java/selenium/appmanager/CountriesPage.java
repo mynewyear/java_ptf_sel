@@ -4,13 +4,14 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class CountriesPage extends  HelperBase{
-    public CountriesPage(WebDriver wd) {
-        super(wd);
+    public CountriesPage(WebDriver wd, WebDriverWait wait) {
+        super(wd, wait);
     }
 
     public void goToCountriesPage() {

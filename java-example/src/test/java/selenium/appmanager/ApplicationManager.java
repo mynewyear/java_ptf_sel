@@ -5,11 +5,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
 
     WebDriver wd;
+    WebDriverWait wait;
 
     private AdminMainPage adminMainPage;
     private CountriesPage countriesPage;
@@ -45,17 +48,19 @@ public class ApplicationManager {
         }else{
             wd = new FirefoxDriver();
         }
-        wd.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+
+        wait = new WebDriverWait(wd, 1);
+        wd.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
         wd.get(url);
-        accountCreationHelper = new AccountCreationHelper(wd);
-        geoZonePage = new GeoZonePage(wd);
-        adminMainPage = new AdminMainPage(wd);
-        customerMainPage = new CustomerMainPage(wd);
-        navigationHelper = new NavigationHelper(wd);
-        sessionHelper = new SessionHelper(wd);
-        countriesPage = new CountriesPage(wd);
-        sessionHelper.login("admin", "admin");
+        accountCreationHelper = new AccountCreationHelper(wd, wait);
+        geoZonePage = new GeoZonePage(wd, wait);
+        adminMainPage = new AdminMainPage(wd, wait);
+        customerMainPage = new CustomerMainPage(wd, wait);
+        navigationHelper = new NavigationHelper(wd, wait);
+        sessionHelper = new SessionHelper(wd, wait);
+        countriesPage = new CountriesPage(wd, wait);
+  //      sessionHelper.login("admin", "admin");
     }
 
     public void stop() {

@@ -4,16 +4,22 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 
 
 public class HelperBase {
-    protected WebDriver wd;
 
-    public HelperBase(WebDriver wd) {
-        this.wd = wd;
+    protected WebDriver wd;
+    protected WebDriverWait wait;
+
+    public HelperBase(WebDriver driver, WebDriverWait wait) {
+        this.wd = driver;
+        this.wait = wait;
     }
+
+//    public HelperBase(WebDriver wd) { this.wd = wd; }
 
     protected void click(By locator) {
         wd.findElement(locator).click();

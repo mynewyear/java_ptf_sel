@@ -4,17 +4,56 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import selenium.models.DuckData;
-
 
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.openqa.selenium.support.ui.ExpectedConditions.numberOfElementsToBe;
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
+import static org.openqa.selenium.support.ui.ExpectedConditions.textToBePresentInElement;
+
 public class CustomerMainPage extends HelperBase {
-    public CustomerMainPage(WebDriver wd) {
-        super(wd);
+    public CustomerMainPage(WebDriver wd, WebDriverWait wait) {
+        super(wd, wait);
     }
 
+    public void addProduct(int count) {
+        for(int i = 1; i <= count; i++) {
+            List<WebElement> products = wd.findElements(By.cssSelector("a.link div.image-wrapper"));
+            products.iterator().next().click();
+            if (isElementPresent(By.cssSelector("[name = 'options[Size]']"))) {
+                Select selectSize = new Select(wd.findElement(By.cssSelector("[name = 'options[Size]']")));
+                selectSize.selectByValue("Small");
+            }
+            click(By.cssSelector("[name = add_cart_product]"));
+            wait.until(textToBePresentInElement(wd.findElement(By.cssSelector("a.content span.quantity")), String.valueOf(i)));
+
+            goBack();
+        }
+    }
+
+    public void deleteAllItemsFromCart() {
+        goToCart();
+        List<WebElement> items = wd.findElements(By.cssSelector("li.shortcut"));
+        for (int a = 0; a < items.size(); a++) {
+            List<WebElement> itemsRows = wd.findElements(By.cssSelector("table.dataTable.rounded-corners tr"));
+            click(By.name("remove_cart_item"));
+            if (a < (items.size() - 1)) {
+                wait.until(numberOfElementsToBe(By.cssSelector("table.dataTable.rounded-corners tr"), (itemsRows.size() - 1)));
+            } else {
+                wait.until(presenceOfElementLocated(By.cssSelector("em")));
+            }
+        }
+    }
+
+
+    public void goToCart(){
+        click(By.cssSelector("#cart a.image"));
+    }
 
     public DuckData getDuckFromMainPage(){
         List<WebElement> item = wd.findElements(By.cssSelector("div#box-campaigns li.product a.link"));
