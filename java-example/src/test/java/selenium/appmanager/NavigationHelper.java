@@ -33,4 +33,9 @@ public class NavigationHelper extends  HelperBase{
         click(By.linkText("Geo Zones"));
     }
 
+    public void goToCountriesPage() {
+        click(By.linkText("Countries"));
+    }
+
+
 }

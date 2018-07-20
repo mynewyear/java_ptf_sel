@@ -4,10 +4,12 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class CountriesPage extends  HelperBase{
     public CountriesPage(WebDriver wd, WebDriverWait wait) {
@@ -17,6 +19,44 @@ public class CountriesPage extends  HelperBase{
     public void goToCountriesPage() {
         click(By.linkText("Countries"));
     }
+
+    public void checkOpenWindows(){
+        String mainWindow;
+        Set<String> oldWindows;
+        String newWindow;
+        int a = 0;
+
+        click(By.linkText("Afghanistan"));
+        Assert.assertTrue(isElementPresent(By.cssSelector("input[value='Afghanistan']")));
+
+        List<WebElement> externalLinks = wd.findElements(By.cssSelector("i.fa.fa-external-link"));
+
+        for (int i = 0; i < externalLinks.size(); i++) {
+            mainWindow = wd.getWindowHandle();
+//            System.out.println("ID: " + mainWindow);
+            oldWindows = wd.getWindowHandles();
+
+            externalLinks.get(i).click();
+
+            newWindow = wait.until(thereIsWindowOtherThan(oldWindows));
+            wd.switchTo().window(newWindow);
+            a++;
+            System.out.println("Opened " + a + "th window: " + wd.getTitle());
+            wd.close();
+            wd.switchTo().window(mainWindow);
+
+        }
+
+    }
+
+    private ExpectedCondition<String> thereIsWindowOtherThan(Set<String> oldWindows) {
+        return input -> {
+            Set<String> handles = input.getWindowHandles();
+            handles.removeAll(oldWindows);
+            return handles.size() > 0 ? handles.iterator().next() : null;
+        };
+    }
+
 
 
     public void countriesAlphabeticalOrder() {

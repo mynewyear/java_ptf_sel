@@ -16,6 +16,7 @@ public class AdminMainPage extends HelperBase {
         super(wd, wait);
     }
 
+
     public void sidebarCheck() {
         List<WebElement> sidebarList = wd.findElements(By.cssSelector("li#app-"));
         for (int i = 0; i < sidebarList.size(); i++) {

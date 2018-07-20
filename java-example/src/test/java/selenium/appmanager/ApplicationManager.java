@@ -60,7 +60,7 @@ public class ApplicationManager {
         navigationHelper = new NavigationHelper(wd, wait);
         sessionHelper = new SessionHelper(wd, wait);
         countriesPage = new CountriesPage(wd, wait);
-  //      sessionHelper.login("admin", "admin");
+        sessionHelper.login("admin", "admin");
     }
 
     public void stop() {
