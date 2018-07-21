@@ -37,7 +37,7 @@ public class ApplicationManager {
         else this.url = customerUrl;
     }
 
-    public void init() {
+    public void init(boolean i) {
 
         if(browser.equals(BrowserType.FIREFOX)){
             wd = new FirefoxDriver();
@@ -60,7 +60,9 @@ public class ApplicationManager {
         navigationHelper = new NavigationHelper(wd, wait);
         sessionHelper = new SessionHelper(wd, wait);
         countriesPage = new CountriesPage(wd, wait);
-        sessionHelper.login("admin", "admin");
+        if(i) {
+            sessionHelper.login("admin", "admin");
+        }
     }
 
     public void stop() {

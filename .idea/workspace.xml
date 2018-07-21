@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bb4965a-1970-4382-b084-f1d41e2e3cec" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/OpenNewWindowsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/AdminMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/AdminMainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CountriesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CountriesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/NavigationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/NavigationHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CustomerMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CustomerMainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBaseCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBaseCustomer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/java-example/.gradle/" />
     <ignored path="$PROJECT_DIR$/java-example/build/" />
@@ -56,15 +55,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HelperBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/HelperBase.java">
+      <file leaf-file-name="OpenNewWindowsTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/OpenNewWindowsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#631#632#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -72,10 +67,16 @@
       <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="62" column="2" selection-start-line="62" selection-start-column="2" selection-end-line="62" selection-end-column="2" />
+            <state relative-caret-position="670">
+              <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2145#2146#0" expanded="true" />
+                <element signature="e#2170#2171#0" expanded="true" />
+                <element signature="e#2223#2224#0" expanded="true" />
+                <element signature="e#2262#2263#0" expanded="true" />
+                <element signature="e#2379#2380#0" expanded="true" />
+                <element signature="e#2418#2419#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,8 +85,8 @@
       <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#409#410#0" expanded="true" />
@@ -95,11 +96,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SessionHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/SessionHelper.java">
+      <file leaf-file-name="CountriesPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CountriesPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="561">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,11 +120,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SessionHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/SessionHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CustomerMainPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CustomerMainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="755">
+              <caret line="171" column="92" selection-start-line="171" selection-start-column="92" selection-end-line="171" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,44 +141,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NavigationHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/NavigationHelper.java">
+      <file leaf-file-name="AddNewProductTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/AddNewProductTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
+            <state relative-caret-position="578">
               <caret line="38" selection-start-line="38" selection-end-line="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckStickers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/CheckStickers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#141#142#0" expanded="true" />
+                <element signature="e#196#197#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddDeleteItemsCartTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/AddDeleteItemsCartTest.java">
+      <file leaf-file-name="TestBaseCustomer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBaseCustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OpenNewWindowsTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/OpenNewWindowsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CountriesPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CountriesPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -561,7 +563,6 @@
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/MyFirstTest.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/Login.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/model/CustomerMainPage.java" />
-        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/CheckStickers.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/CountryCheking.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/GeoZoneChecking.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/Models/DuckData.java" />
@@ -580,15 +581,16 @@
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/SessionHelper.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/AddDeleteItemsBasketTest.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/AddDeleteItemsCartTest.java" />
-        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBaseCustomer.java" />
-        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CustomerMainPage.java" />
-        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/AdminMainPage.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/NavigationHelper.java" />
-        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/LinksInNewWindowTest.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CountriesPage.java" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/OpenNewWindowsTest.java" />
+        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/CheckStickers.java" />
+        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CustomerMainPage.java" />
+        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBase.java" />
+        <option value="$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBaseCustomer.java" />
       </list>
     </option>
   </component>
@@ -612,6 +614,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -697,7 +700,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -725,7 +727,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OpenNewWindowsTest">
+  <component name="RunManager" selected="JUnit.CheckStickers">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -775,7 +777,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="CreateCustomerAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckStickers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-example_test" />
       <extension name="coverage">
         <pattern>
@@ -786,7 +788,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="selenium.tests" />
-      <option name="MAIN_CLASS_NAME" value="selenium.tests.CreateCustomerAccountTest" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.CheckStickers" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -883,19 +885,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.CreateCustomerAccountTest" />
       <item itemvalue="JUnit.AddNewProductTest" />
       <item itemvalue="JUnit.AddDeleteItemsCartTest" />
       <item itemvalue="JUnit.OpenNewWindowsTest.openNewWindowsTest" />
       <item itemvalue="JUnit.OpenNewWindowsTest" />
+      <item itemvalue="JUnit.CheckStickers" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CheckStickers" />
         <item itemvalue="JUnit.OpenNewWindowsTest" />
         <item itemvalue="JUnit.OpenNewWindowsTest.openNewWindowsTest" />
         <item itemvalue="JUnit.AddDeleteItemsCartTest" />
         <item itemvalue="JUnit.AddNewProductTest" />
-        <item itemvalue="JUnit.CreateCustomerAccountTest" />
       </list>
     </recent_temporary>
   </component>
@@ -980,25 +982,17 @@
       <option name="project" value="LOCAL" />
       <updated>1531958184981</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Task 14. test - checking new windows.">
+      <created>1532114715661</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1532114715661</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LinksInNewWindowTest_linksInNewWindowTest - 2018.07.19 at 23h 48m 26s.xml">
-      <configuration name="LinksInNewWindowTest.linksInNewWindowTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinksInNewWindowTest_linksInNewWindowTest - 2018.07.20 at 11h 08m 29s.xml">
-      <configuration name="LinksInNewWindowTest.linksInNewWindowTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinksInNewWindowTest_linksInNewWindowTest - 2018.07.20 at 11h 10m 53s.xml">
-      <configuration name="LinksInNewWindowTest.linksInNewWindowTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinksInNewWindowTest_linksInNewWindowTest - 2018.07.20 at 12h 13m 32s.xml">
-      <configuration name="LinksInNewWindowTest.linksInNewWindowTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinksInNewWindowTest_linksInNewWindowTest - 2018.07.20 at 12h 14m 28s.xml">
-      <configuration name="LinksInNewWindowTest.linksInNewWindowTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LinksInNewWindowTest_linksInNewWindowTest - 2018.07.20 at 12h 15m 05s.xml">
       <configuration name="LinksInNewWindowTest.linksInNewWindowTest" configurationId="JUnit" />
     </history-entry>
@@ -1014,6 +1008,21 @@
     <history-entry file="LinksInNewWindowTest_linksInNewWindowTest - 2018.07.20 at 12h 19m 30s.xml">
       <configuration name="LinksInNewWindowTest.linksInNewWindowTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="OpenNewWindowsTest - 2018.07.20 at 12h 23m 36s.xml">
+      <configuration name="OpenNewWindowsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckStickers - 2018.07.20 at 12h 33m 17s.xml">
+      <configuration name="CheckStickers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckStickers - 2018.07.20 at 12h 46m 17s.xml">
+      <configuration name="CheckStickers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckStickers - 2018.07.20 at 15h 00m 47s.xml">
+      <configuration name="CheckStickers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OpenNewWindowsTest - 2018.07.20 at 15h 01m 28s.xml">
+      <configuration name="OpenNewWindowsTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1026,7 +1035,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1460" height="1181" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32880098" />
@@ -1037,11 +1045,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5028653" side_tool="true" weight="0.33295456" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32879657" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4986649" weight="0.27564895" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713466" visible="true" weight="0.27458617" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713466" weight="0.27458617" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32880098" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28642857" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2907143" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.19269341" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1060,23 +1068,22 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3295129" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Gradle" order="5" weight="0.19269341" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713466" visible="true" weight="0.37954545" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4986649" weight="0.27564895" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23992322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32880098" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4986649" weight="0.27564895" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713466" visible="true" weight="0.37954545" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info id="Capture Tool" order="5" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32879657" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.31139836" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32880098" />
@@ -1084,9 +1091,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.2601626" />
+      <window_info id="Capture Tool" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3187572" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3295129" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32879657" />
       <window_info id="Favorites" order="6" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -1139,7 +1147,8 @@
     <MESSAGE value="Task 11. test - create new customer account" />
     <MESSAGE value="Task 12. test - add new product." />
     <MESSAGE value="Task 13. test - add new products, and delete all of them from carts." />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 13. test - add new products, and delete all of them from carts." />
+    <MESSAGE value="Task 14. test - checking new windows." />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 14. test - checking new windows." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1323,20 +1332,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/CheckStickers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/AddNewProductTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/AccountCreationHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1365,37 +1360,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBaseCustomer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CustomerMainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/AddDeleteItemsCartTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/AdminMainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1409,6 +1377,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/HelperBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/AdminMainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/SessionHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1416,21 +1401,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/HelperBase.java">
+    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/CheckStickers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="136">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#141#142#0" expanded="true" />
+            <element signature="e#196#197#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/ApplicationManager.java">
+    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/AddNewProductTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="62" column="2" selection-start-line="62" selection-start-column="2" selection-end-line="62" selection-end-column="2" />
+        <state relative-caret-position="578">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CountriesPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CustomerMainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="755">
+          <caret line="171" column="92" selection-start-line="171" selection-start-column="92" selection-end-line="171" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1439,8 +1441,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#409#410#0" expanded="true" />
@@ -1449,20 +1451,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/CountriesPage.java">
+    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/appmanager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        <state relative-caret-position="670">
+          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2145#2146#0" expanded="true" />
+            <element signature="e#2170#2171#0" expanded="true" />
+            <element signature="e#2223#2224#0" expanded="true" />
+            <element signature="e#2262#2263#0" expanded="true" />
+            <element signature="e#2379#2380#0" expanded="true" />
+            <element signature="e#2418#2419#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/TestBaseCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java-example/src/test/java/selenium/tests/OpenNewWindowsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        <state relative-caret-position="153">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
         </state>
       </provider>
     </entry>

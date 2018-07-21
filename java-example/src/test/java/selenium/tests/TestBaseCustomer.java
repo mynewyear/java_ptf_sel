@@ -10,7 +10,7 @@ public class TestBaseCustomer {
 
     @Before
     public void setUp() throws Exception {
-        app.init();
+        app.init(false);
     }
 
     @After

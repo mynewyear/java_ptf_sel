@@ -146,7 +146,7 @@ public class CustomerMainPage extends HelperBase {
         return  (ArrayList<WebElement>) wd.findElements(By.cssSelector("img.image"));
     }
 
-    public void stikerSale() {
+    public void stickerSale() {
         wd.findElement(By.cssSelector("div.sticker.sale"));
     }
 
@@ -154,15 +154,15 @@ public class CustomerMainPage extends HelperBase {
         wd.findElement(By.cssSelector("div.sticker"));
     }
 
-    public void stikerNew() {
+    public void stickerNew() {
         wd.findElement(By.cssSelector("div.sticker.new"));
     }
 
-    public int stikerSaleCount() {
+    public int stickerSaleCount() {
         return wd.findElements(By.cssSelector("div.image-wrapper div.sticker.sale")).size();
     }
 
-    public int stikerNewCount() {
+    public int stickerNewCount() {
         return wd.findElements(By.cssSelector("div.image-wrapper div.sticker.new")).size();
     }
 
@@ -171,9 +171,8 @@ public class CustomerMainPage extends HelperBase {
         for (WebElement product : products) {
             List<WebElement> stickers = product.findElements(By.cssSelector("div.sticker"));
             Assert.assertEquals(stickers.size(), 1);
-            System.out.println(stickers);
+           System.out.println(product.getText());
         }
     }
-
 
 }
