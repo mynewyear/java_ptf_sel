@@ -24,7 +24,6 @@ public class CountriesPage extends  HelperBase{
         String mainWindow;
         Set<String> oldWindows;
         String newWindow;
-        int a = 0;
 
         click(By.linkText("Afghanistan"));
         Assert.assertTrue(isElementPresent(By.cssSelector("input[value='Afghanistan']")));
@@ -40,8 +39,7 @@ public class CountriesPage extends  HelperBase{
 
             newWindow = wait.until(thereIsWindowOtherThan(oldWindows));
             wd.switchTo().window(newWindow);
-            a++;
-            System.out.println("Opened " + a + "th window: " + wd.getTitle());
+            System.out.println("Opened " + (i + 1) + "th window: " + wd.getTitle());
             wd.close();
             wd.switchTo().window(mainWindow);
 

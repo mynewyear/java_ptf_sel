@@ -21,6 +21,7 @@ public class ApplicationManager {
     private SessionHelper sessionHelper;
     private GeoZonePage geoZonePage;
     private AccountCreationHelper accountCreationHelper;
+    private CatalogPage catalogPage;
 
     private String browser;
     private String adminUrl = "http://localhost/litecart/admin/";
@@ -60,6 +61,7 @@ public class ApplicationManager {
         navigationHelper = new NavigationHelper(wd, wait);
         sessionHelper = new SessionHelper(wd, wait);
         countriesPage = new CountriesPage(wd, wait);
+        catalogPage = new CatalogPage(wd, wait);
         if(i) {
             sessionHelper.login("admin", "admin");
         }
@@ -81,4 +83,5 @@ public class ApplicationManager {
     public AdminMainPage getAdminMainPage(){ return adminMainPage;}
     public GeoZonePage getGeoZonePage(){ return geoZonePage; }
     public AccountCreationHelper getAccountCreationHelper(){ return accountCreationHelper;}
+    public CatalogPage getCatalogPage() { return catalogPage; }
 }

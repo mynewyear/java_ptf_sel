@@ -170,8 +170,8 @@ public class CustomerMainPage extends HelperBase {
         List<WebElement> products = wd.findElements(By.cssSelector("a.link div.image-wrapper"));
         for (WebElement product : products) {
             List<WebElement> stickers = product.findElements(By.cssSelector("div.sticker"));
-            Assert.assertEquals(stickers.size(), 1);
-           System.out.println(product.getText());
+            Assert.assertTrue(stickers.size() < 2);
+ //          System.out.println(product.getText());
         }
     }
 

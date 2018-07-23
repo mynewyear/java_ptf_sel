@@ -33,9 +33,21 @@ public class NavigationHelper extends  HelperBase{
         click(By.linkText("Geo Zones"));
     }
 
-    public void goToCountriesPage() {
+    public void goToCountriesPage()
+    {
+        if(isElementPresent(By.cssSelector("h1['Countries']"))){
+            return;
+        }
         click(By.linkText("Countries"));
     }
 
 
+    public void catalogPage() {
+        {
+            if(isElementPresent(By.cssSelector("h1['Catalog']"))){
+                return;
+            }
+            click(By.linkText("Catalog"));
+        }
+    }
 }
