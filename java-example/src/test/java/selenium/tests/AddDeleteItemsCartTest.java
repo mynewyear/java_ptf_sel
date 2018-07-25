@@ -7,9 +7,8 @@ public class AddDeleteItemsCartTest extends TestBaseCustomer{
     @Test
     public void addDeleteItemsTest(){
         app.goTo().customerMainPage();
-        app.getCustomerMainPage().addProduct(3);
-        app.getCustomerMainPage().deleteAllItemsFromCart();
-
+        app.getProductPage().addProduct(3);
+        app.getCartPage().deleteItemsFromCart();
     }
 
 }

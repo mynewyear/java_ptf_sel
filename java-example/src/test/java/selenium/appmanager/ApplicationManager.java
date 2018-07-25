@@ -22,6 +22,8 @@ public class ApplicationManager {
     private GeoZonePage geoZonePage;
     private AccountCreationHelper accountCreationHelper;
     private CatalogPage catalogPage;
+    private CartPage cartPage;
+    private ProductPage productPage;
 
     private String browser;
     private String adminUrl = "http://localhost/litecart/admin/";
@@ -62,6 +64,9 @@ public class ApplicationManager {
         sessionHelper = new SessionHelper(wd, wait);
         countriesPage = new CountriesPage(wd, wait);
         catalogPage = new CatalogPage(wd, wait);
+        productPage = new ProductPage(wd, wait);
+        cartPage = new CartPage(wd, wait);
+
         if(i) {
             sessionHelper.login("admin", "admin");
         }
@@ -84,4 +89,6 @@ public class ApplicationManager {
     public GeoZonePage getGeoZonePage(){ return geoZonePage; }
     public AccountCreationHelper getAccountCreationHelper(){ return accountCreationHelper;}
     public CatalogPage getCatalogPage() { return catalogPage; }
+    public CartPage getCartPage() { return cartPage;}
+    public ProductPage getProductPage() { return productPage;}
 }

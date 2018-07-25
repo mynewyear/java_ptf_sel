@@ -52,7 +52,7 @@ public class CustomerMainPage extends HelperBase {
 
 
     public void goToCart(){
-        click(By.cssSelector("#cart a.image"));
+        click(By.cssSelector("#cart"));
     }
 
     public DuckData getDuckFromMainPage(){
@@ -167,9 +167,9 @@ public class CustomerMainPage extends HelperBase {
     }
 
     public void stickersPresent() {
-        List<WebElement> products = wd.findElements(By.cssSelector("a.link div.image-wrapper"));
+        List<WebElement> products = wd.findElements(By.className("product"));
         for (WebElement product : products) {
-            List<WebElement> stickers = product.findElements(By.cssSelector("div.sticker"));
+            List<WebElement> stickers = product.findElements(By.className("sticker"));
             Assert.assertTrue(stickers.size() < 2);
  //          System.out.println(product.getText());
         }

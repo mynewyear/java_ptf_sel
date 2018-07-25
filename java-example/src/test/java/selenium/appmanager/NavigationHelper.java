@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
+
 
 public class NavigationHelper extends  HelperBase{
 
@@ -49,5 +51,12 @@ public class NavigationHelper extends  HelperBase{
             }
             click(By.linkText("Catalog"));
         }
+    }
+
+
+    public void goToCart(){
+        click(By.cssSelector("#cart a.image"));
+        wait.until(titleIs("Checkout | My Store"));
+        System.out.println("page: " + wd.findElement(By.name("different_shipping_address")).getText());
     }
 }
