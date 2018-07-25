@@ -18,9 +18,9 @@ public class CreateCustomerAccountTest extends TestBaseCustomer{
                "Nata",
                "Ya",
                 "1 street",
-               "123456",
+               "12345",
                "Moscow",
-               "Russian Federation",
+               "US",
                 email,
                "1234567899",
                password);

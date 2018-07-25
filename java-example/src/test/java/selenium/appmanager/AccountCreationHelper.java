@@ -7,6 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import selenium.models.AccountCreationData;
+import java.util.Random;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
+
 
 public class AccountCreationHelper extends HelperBase {
     public AccountCreationHelper(WebDriver wd, WebDriverWait wait) {
@@ -29,8 +33,12 @@ public class AccountCreationHelper extends HelperBase {
         type(By.name("address1"), address1);
         type(By.cssSelector("[name = postcode]"), postcode);
         type(By.cssSelector("[name = city]"), city);
-        //Select selectCountry = new Select(driver.findElement(By.cssSelector(".select2-selection.select2-selection--single")));
-        //selectCountry.selectByVisibleText(country);
+
+        new Select(wd.findElement(By.cssSelector("[name=country_code]"))).selectByValue(country);
+        wait.until(elementToBeClickable(By.cssSelector("select[name=zone_code]")));
+        Select selectState = new Select(wd.findElement(By.cssSelector("select[name=zone_code]")));
+        selectState.selectByIndex(new Random().nextInt(selectState.getOptions().size()));
+
         type(By.cssSelector("[name = email]"), email);
         type(By.cssSelector("[name = phone]"), phone);
         type(By.cssSelector("[name = password]"), password);
